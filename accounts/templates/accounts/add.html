@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}REgistration Form{% endblock title %}
+
+{% block content %}
+
+<div class="card is-center">
+    <div class="card-content">
+      
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link">Submit</button>
+              </div>           
+            </div>
+        </form>
+          
+          
+          
+          
+      
+    </div>
+    
+  </div>
+
+{% endblock content %}
